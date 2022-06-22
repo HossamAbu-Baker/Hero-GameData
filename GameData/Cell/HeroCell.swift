@@ -21,4 +21,7 @@ class HeroCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    func dataPass(name:String){
+        nameLabel.text = name
+    }
 }

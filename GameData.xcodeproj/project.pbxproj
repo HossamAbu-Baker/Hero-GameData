@@ -18,6 +18,7 @@
 		7B9BC17D27EBC6960094D837 /* HeroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9BC17B27EBC6960094D837 /* HeroCell.swift */; };
 		7B9BC17E27EBC6960094D837 /* HeroCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B9BC17C27EBC6960094D837 /* HeroCell.xib */; };
 		7B9BC18027EBCF6A0094D837 /* HeroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9BC17F27EBCF6A0094D837 /* HeroViewController.swift */; };
+		7BDD7F67285E736F00A23210 /* protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDD7F66285E736F00A23210 /* protocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		7B9BC17B27EBC6960094D837 /* HeroCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCell.swift; sourceTree = "<group>"; };
 		7B9BC17C27EBC6960094D837 /* HeroCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeroCell.xib; sourceTree = "<group>"; };
 		7B9BC17F27EBCF6A0094D837 /* HeroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroViewController.swift; sourceTree = "<group>"; };
+		7BDD7F66285E736F00A23210 /* protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = protocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 		7B9BC15D27EBBB5B0094D837 /* GameData */ = {
 			isa = PBXGroup;
 			children = (
+				7BDD7F68285E738700A23210 /* protocol */,
 				7B9BC17527EBBF470094D837 /* Networking */,
 				7B9BC17227EBBD4F0094D837 /* Models */,
 				7B9BC15E27EBBB5B0094D837 /* AppDelegate.swift */,
@@ -112,6 +115,14 @@
 				7B9BC17F27EBCF6A0094D837 /* HeroViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7BDD7F68285E738700A23210 /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				7BDD7F66285E736F00A23210 /* protocols.swift */,
+			);
+			path = protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +204,7 @@
 				7B9BC17D27EBC6960094D837 /* HeroCell.swift in Sources */,
 				7B9BC16127EBBB5B0094D837 /* SceneDelegate.swift in Sources */,
 				7B9BC17427EBBD6F0094D837 /* Hero.swift in Sources */,
+				7BDD7F67285E736F00A23210 /* protocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,18 +16,20 @@ class HeroViewController: UIViewController {
     @IBOutlet weak var legs: UILabel!
     
     var heroOpject:Hero?
+    var xdelegate:titleDelegate?
     override func viewDidLoad() {
         super.viewDidLoad()
-        nameLabel.text=heroOpject?.localized_name ?? ""
-        atrbiteslabel.text=heroOpject?.primary_attr ?? ""
-        attackLabel.text=heroOpject?.attack_type ?? ""
-        legs.text="\(heroOpject?.legs ?? 0)"
         
-        var paseUrl="https://api.opendota.com"+(heroOpject?.img ?? "")
+        nameLabel.text = " Hero Name :  \(heroOpject?.localized_name ?? "")"
+        atrbiteslabel.text = " Atrbiutes : \(heroOpject?.primary_attr ?? "")"
+        attackLabel.text = " Attack-Tybe :  \(heroOpject?.attack_type ?? "")"
+        legs.text = " legs :  \(heroOpject?.legs ?? 0)"
+        
+        let paseUrl="https://api.opendota.com"+(heroOpject?.img ?? "")
         let url = URL(string: paseUrl)
         imgPhoto.downloaded(from: url!)
         
-        
+        xdelegate?.addTitle(name: nameLabel.text ?? "")
         
     }
     
